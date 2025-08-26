@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Eletroponto - Suporte Técnico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Processador de Arquivos TXT</h1>
+    <input type="file" id="arquivoEntrada" accept=".txt">
+    <button onclick="processarArquivo()">Processar</button>
+    <a id="downloadLink" style="display:none;" download="arquivo_processado.txt">Baixar Arquivo Processado</a>
+    <p id="mensagem"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
