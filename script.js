@@ -9,12 +9,13 @@ function processarArquivo() {
 
   const reader = new FileReader();
   reader.onload = function(e) {
-    const conteudo = e.target.result;
+    // Substitui todas as tabulações por 5 espaços
+    const conteudo = e.target.result.replace(/\t/g, "     ");
     const linhas = conteudo.split(/\r?\n/).slice(4); // Remove as 4 primeiras linhas
 
     const novasLinhas = linhas.map(linha => {
-      const partes = linha.split("\t");
-      return partes.length > 5 ? partes.slice(2).join("\t") : null;
+      const partes = linha.split("     "); // Agora separa por 5 espaços
+      return partes.length > 5 ? partes.slice(2).join("     ") : null;
     }).filter(l => l !== null);
 
     const resultado = novasLinhas.join("\n");
@@ -29,3 +30,4 @@ function processarArquivo() {
 
   reader.readAsText(file);
 }
+
