@@ -7,6 +7,7 @@ body {
   height: 100vh;
 }
 
+
 .container {
   background-color: white;
   padding: 30px;
@@ -37,3 +38,20 @@ button:hover {
   margin-top: 20px;
   color: green;
 }
+
+    footer {
+      text-align: center;
+      padding: 1px;
+      background-color: #e4e4e4;
+      color: #666666;
+      width: 100%; /* Ocupando toda a largura */
+      position: fixed; /* Posição fixa na parte inferior */
+      bottom: 0; /* Fixando no rodapé */
+      left: 0; /* Alinhando à esquerda */
+      font-size: 14px; /* Tamanho da fonte */
+    }
+
+    footer a {
+      text-decoration: none; /* Remover sublinhado do link */
+      color: #50359b; /* Cor do link */
+    }
