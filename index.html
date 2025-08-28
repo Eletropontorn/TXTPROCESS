@@ -2,17 +2,22 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Eletroponto - Suporte Técnico</title>
+  <title>Eletroponto - Processador de Arquivos</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
   <div class="container">
-    <h1>Processador de Arquivos TXT</h1>
-    <input type="file" id="arquivoEntrada" accept=".txt">
-    <button onclick="processarArquivo()">Processar</button>
-    <a id="downloadLink" style="display:none;" download="arquivo_processado.txt">Baixar Arquivo Processado</a>
-    <p id="mensagem"></p>
+  <img src="logo.png" alt="Logo Eletroponto" class="logo">
+  <h1>Processador de Arquivos TXT</h1>
+  <input type="file" id="arquivoEntrada" accept=".txt">
+  <button onclick="processarArquivo()">Processar</button>
+  <a id="downloadLink" style="display:none;" download="arquivo_processado.txt">Baixar Arquivo Processado</a>
+  <p id="mensagem"></p>
   </div>
   <script src="script.js"></script>
+  <footer>
+    Desenvolvido por <a href="https://www.eletropontorn.com.br/" target="_blank">Eletroponto - Controle de ponto e acesso</a>
+  </footer>
 </body>
 </html>
