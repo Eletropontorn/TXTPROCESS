@@ -30,4 +30,3 @@ function processarArquivo() {
 
   reader.readAsText(file);
 }
-
