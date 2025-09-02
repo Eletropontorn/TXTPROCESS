@@ -7,14 +7,27 @@ body {
   height: 100vh;
 }
 
-
 .container {
   background-color: white;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
   text-align: center;
 }
+
+.container .logo {
+  width: 900px;
+  height: auto;
+}
+
+h1 {
+  font-size: 30px; 
+  color: #333333; 
+  margin-bottom: 20px; 
+  font-weight: 700; 
+  letter-spacing: 1px; 
+}
+
 
 input, button, a {
   margin: 10px;
@@ -23,7 +36,7 @@ input, button, a {
 }
 
 button {
-  background-color: #0078d7;
+  background-color: #0f47ab;
   color: white;
   border: none;
   border-radius: 5px;
@@ -31,7 +44,25 @@ button {
 }
 
 button:hover {
-  background-color: #005fa3;
+  background-color: cornflowerblue;  
+}
+
+#downloadLink {
+  display: inline-block;
+  background-color: #0f47ab;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#downloadLink:hover {
+  background-color: cornflowerblue;
 }
 
 #mensagem {
@@ -40,18 +71,18 @@ button:hover {
 }
 
     footer {
-      text-align: center;
-      padding: 1px;
-      background-color: #e4e4e4;
+      text-align: center; 
+      padding: 5px; 
+      background-color:   #e4e4e4;
       color: #666666;
-      width: 100%; /* Ocupando toda a largura */
-      position: fixed; /* Posição fixa na parte inferior */
-      bottom: 0; /* Fixando no rodapé */
-      left: 0; /* Alinhando à esquerda */
-      font-size: 14px; /* Tamanho da fonte */
+      width: 100%; 
+      position: fixed; 
+      bottom: 0; 
+      left: 0; 
+      font-size: 15px; 
     }
 
     footer a {
-      text-decoration: none; /* Remover sublinhado do link */
-      color: #50359b; /* Cor do link */
+      text-decoration: none; 
+      color: #50359b; 
     }
