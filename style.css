@@ -4,9 +4,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;   /* antes era height:100vh, troquei por min-height */
-  margin: 0;           /* evita barra de rolagem lateral em mobile */
-  padding: 10px;       /* dá um respiro em telas pequenas */
+  min-height: 100vh;   
+  margin: 0;           
+  padding: 10px;       
 }
 
 .container {
@@ -15,9 +15,9 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   text-align: center;
-  max-width: 900px;        /* limite em telas grandes */
-  width: 100%;             /* ocupa até 100% em telas menores */
-  box-sizing: border-box;  /* garante que padding conta dentro da largura */
+  max-width: 900px;        
+  width: 100%;             
+  box-sizing: border-box;  
 }
 
 .container:hover {
@@ -26,15 +26,15 @@ body {
 }
 
 .container .logo {
-  display: block;       /* faz a imagem se comportar como bloco */
-  margin: 0 auto;       /* centraliza horizontalmente */
-  max-width: 100%;      /* nunca passa da largura do container */
+  display: block;       
+  margin: 0 auto;       
+  max-width: 100%;      
   height: auto;
   padding: 0;
 }
 
 .logo:hover {
-  transform: scale(1.05); /* leve aumento ao passar o mouse */
+  transform: scale(1.05); 
 }
 
 h1 {
@@ -48,9 +48,9 @@ h1 {
 
 .botao-container {
   display: flex;
-  justify-content: center;   /* centraliza horizontalmente */
-  flex-wrap: wrap;           /* permite quebrar em telas pequenas */
-  gap: 10px;                 /* espaçamento entre os elementos */
+  justify-content: center;   
+  flex-wrap: wrap;           
+  gap: 10px;                 
   margin-top: 10px;
 }
 
@@ -58,7 +58,7 @@ input, button, a {
   margin: 5px;
   padding: 10px;
   font-size: 16px;
-  max-width: 100%; /* inputs e botões não passam da tela */
+  max-width: 100%; 
   box-sizing: border-box;
 }
 
@@ -75,9 +75,9 @@ button:hover {
 }
 
 #arquivoEntrada {
-  display: block;      /* transforma em bloco */
-  margin: 10px auto;   /* centraliza horizontalmente */
-  max-width: 100%;     /* não estoura a tela em mobile */
+  display: block;      
+  margin: 10px auto;   
+  max-width: 100%;     
   box-sizing: border-box;
 }
 
